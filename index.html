@@ -1,0 +1,2457 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Principal -->
+  <title>InspirARQ 2026 — Curso Imersivo de Arquitetura e Design de Interiores | Costa Flores · São José dos Campos</title>
+  <meta name="description" content="Curso imersivo de arquitetura e design de interiores: 10 aulas com especialistas em planejados, iluminação, revestimentos, pedras e automação. 13 a 17 de julho de 2026 na Costa Flores Flagship Store, São José dos Campos, SP. Vagas limitadas.">
+  <meta name="keywords" content="InspirARQ 2026, curso arquitetura São José dos Campos, design de interiores, planejados, móveis planejados, iluminação arquitetural, revestimentos, automação residencial, Costa Flores, curso imersivo arquitetura, Fernando Flores">
+  <meta name="author" content="Costa Flores">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#414940">
+
+  <!-- Canonical — atualize para a URL final de publicação -->
+  <link rel="canonical" href="https://inspiraarq.vsexperience.com.br/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="01_Logo InspirARQ/logocostaflores.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="InspirARQ 2026 | Costa Flores">
+  <meta property="og:title" content="InspirARQ 2026 — Curso Imersivo de Arquitetura e Design de Interiores">
+  <meta property="og:description" content="10 aulas com especialistas em planejados, iluminação, revestimentos e automação. 13 a 17 de julho de 2026 · Costa Flores Flagship Store · São José dos Campos, SP. Vagas limitadas.">
+  <meta property="og:image" content="https://inspiraarq.vsexperience.com.br/lading-page_INSPIRARQ.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="InspirARQ 2026 — Curso Imersivo de Arquitetura, Costa Flores">
+  <meta property="og:url" content="https://inspiraarq.vsexperience.com.br/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InspirARQ 2026 — Curso Imersivo de Arquitetura e Design">
+  <meta name="twitter:description" content="13 a 17 de julho · Costa Flores Flagship Store · São José dos Campos, SP. Vagas limitadas.">
+  <meta name="twitter:image" content="https://inspiraarq.vsexperience.com.br/lading-page_INSPIRARQ.png">
+  <meta name="twitter:image:alt" content="InspirARQ 2026 — Curso Imersivo Costa Flores">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload do logo hero (LCP) -->
+  <link rel="preload" as="image" href="01_Logo InspirARQ/logo-inspirarq_02_verde.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    /* ═══════════════════════════════════════════
+       TOKENS
+    ═══════════════════════════════════════════ */
+    :root {
+      --green:      #596157;
+      --green-dark: #414940;
+      --green-soft: #738073;
+      --text:       #656c63;
+      --muted:      #8a9188;
+      --paper:      #f8f8f6;
+      --white:      #ffffff;
+      --black:      #101211;
+      --line:       rgba(89,97,87,0.26);
+      --max:        1180px;
+      --header-h:   88px;
+      --ease:       cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* ═══════════════════════════════════════════
+       RESET
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font-family: "Montserrat", "Avenir Next", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img     { display: block; max-width: 100%; }
+    a       { color: inherit; text-decoration: none; }
+    address { font-style: normal; }
+
+    @media (min-width: 981px) and (prefers-reduced-motion: no-preference) {
+      html {
+        scroll-snap-type: y mandatory;
+      }
+
+      .section,
+      .site-footer {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+      }
+    }
+
+    /* ═══════════════════════════════════════════
+       HEADER
+    ═══════════════════════════════════════════ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0;
+      z-index: 100;
+      width: 100%;
+      height: var(--header-h);
+      color: var(--green-dark);
+      transition:
+        background  400ms var(--ease),
+        color       400ms var(--ease),
+        box-shadow  400ms var(--ease),
+        height      400ms var(--ease);
+    }
+
+    .site-header.is-scrolled {
+      height: 66px;
+      color: var(--white);
+      background: rgba(12, 15, 13, 0.86);
+      box-shadow:
+        0 1px 0 rgba(255,255,255,0.05),
+        0 16px 48px rgba(0,0,0,0.18);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .header-inner {
+      width: min(var(--max), calc(100% - 72px));
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    /* brand */
+    .brand {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .brand-logo {
+      height: 24px;
+      width: auto;
+      display: block;
+      transition: filter 400ms var(--ease), opacity 400ms var(--ease);
+    }
+    .site-header.is-scrolled .brand-logo {
+      filter: brightness(0) invert(1);
+    }
+
+    /* desktop nav */
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 2.2vw, 40px);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .nav a {
+      opacity: 0.72;
+      transition: opacity 200ms ease;
+      position: relative;
+      padding-bottom: 2px;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: currentColor;
+      transition: width 260ms var(--ease);
+    }
+    .nav a:hover           { opacity: 1; }
+    .nav a:hover::after    { width: 100%; }
+
+    /* hamburger */
+    .menu-button {
+      display: none;
+      width: 44px; height: 44px;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: currentColor;
+      cursor: pointer;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .menu-button span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: currentColor;
+      transition:
+        transform 300ms var(--ease),
+        opacity   260ms ease;
+      transform-origin: center;
+    }
+    .menu-button.is-open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .menu-button.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0.2); }
+    .menu-button.is-open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+    /* nav overlay */
+    .nav-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 98;
+      background: rgba(0,0,0,0.45);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 300ms ease;
+    }
+    .nav-overlay.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ═══════════════════════════════════════════
+       LAYOUT SHELL
+    ═══════════════════════════════════════════ */
+    .section {
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+      /* background intencional ausente: herdado do body (--paper).
+         Seções com pattern definem o próprio background abaixo. */
+    }
+
+    .section-inner {
+      width: min(var(--max), calc(100% - 80px));
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: calc(var(--header-h) + 48px) 0 64px;
+      display: grid;
+      align-items: center;
+      align-content: center;
+      gap: 72px;
+    }
+
+    /* ═══════════════════════════════════════════
+       ENTRANCE ANIMATIONS
+    ═══════════════════════════════════════════ */
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition:
+          opacity   680ms var(--ease),
+          transform 680ms var(--ease);
+      }
+      .reveal.delay-1 { transition-delay: 110ms; }
+      .reveal.delay-2 { transition-delay: 220ms; }
+      .reveal.delay-3 { transition-delay: 340ms; }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    /* ═══════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════ */
+    .section.hero {
+      background:
+        linear-gradient(150deg, rgba(248,248,246,0.08) 0%, rgba(248,248,246,0.02) 100%),
+        url("Pattern/background_inspirarq_2026.png") center / cover no-repeat;
+    }
+
+    .hero .section-inner {
+      justify-items: center;
+      text-align: center;
+      padding-top: 196px;
+      padding-bottom: 96px;
+      gap: 0;
+    }
+
+    .hero-logo {
+      width: min(420px, 70vw);
+    }
+
+    .hero-kicker {
+      margin-top: 26px;
+      color: var(--green);
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+
+    .hero-mark {
+      position: absolute;
+      right: 12%;
+      top: 33%;
+      width: min(170px, 13vw);
+      opacity: 0.35;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+
+    .hero-symbol {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(220px, 18vw);
+      opacity: 0.38;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: var(--green-soft);
+      font-size: 8.5px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      user-select: none;
+    }
+    .hero-scroll::after {
+      content: "";
+      width: 1px;
+      height: 40px;
+      background: currentColor;
+      animation: scrollLine 2.2s var(--ease) infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { transform: scaleY(1);   opacity: 0.6; }
+      50%       { transform: scaleY(0.7); opacity: 1;   }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-scroll::after { animation: none; }
+    }
+
+    /* ═══════════════════════════════════════════
+       SECTION TITLE (shared)
+    ═══════════════════════════════════════════ */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      color: var(--green);
+      font-size: clamp(24px, 3.4vw, 40px);
+      font-weight: 400;
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+    }
+    .section-title::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 2px;
+      height: 116px;
+      background: var(--green);
+      transform: rotate(17deg);
+      transform-origin: center;
+    }
+    .section-title strong {
+      display: block;
+      font-weight: 900;
+    }
+
+    /* ═══════════════════════════════════════════
+       ABOUT
+    ═══════════════════════════════════════════ */
+    .section.about {
+      background: var(--paper);
+    }
+
+    /* cubos isométricos — imagem espelhada para o lado esquerdo */
+    .section.about::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("Pattern/simbolos_02_inspirarq_2026.png") right center / auto 92% no-repeat;
+      transform: scaleX(-1);
+      opacity: 0.6;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* blob verde + fade lateral que cobre os cubos no lado do texto */
+    .section.about::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(95deg,
+          transparent            0%,
+          rgba(248,248,246,0.88) 36%,
+          var(--paper)           54%),
+        radial-gradient(ellipse 52% 60% at 18% 44%,
+          rgba(79,103,80,0.28)   0%,
+          rgba(79,103,80,0.05)   52%,
+          transparent            76%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .section.about .section-inner {
+      grid-template-columns: 0.9fr 1.1fr;
+      position: relative;
+      z-index: 2;
+    }
+
+    .copy {
+      max-width: 500px;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.78;
+    }
+    .copy p { margin: 0 0 22px; }
+    .copy p:last-child { margin-bottom: 0; }
+    .copy strong { font-weight: 700; color: var(--green-dark); }
+
+    /* ═══════════════════════════════════════════
+       EVENT
+    ═══════════════════════════════════════════ */
+    .event .section-inner {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .event-copy {
+      max-width: 440px;
+      font-size: 15.5px;
+      font-weight: 500;
+      line-height: 1.72;
+    }
+    .event-copy p { margin: 0 0 18px; }
+    .event-copy p:last-child { margin-bottom: 0; }
+    .event-copy strong { font-weight: 800; color: var(--green-dark); }
+
+    .meta-pill {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 20px;
+      padding: 16px 24px;
+      color: var(--white);
+      background: var(--green);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.45;
+    }
+
+    .big-idea {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      color: var(--green);
+      font-size: clamp(24px, 4vw, 46px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: -0.01em;
+    }
+    .big-idea::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 2px;
+      height: 132px;
+      background: var(--green);
+      transform: rotate(17deg);
+      transform-origin: center;
+    }
+    .big-idea strong {
+      display: block;
+      font-size: 1.12em;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+
+    .chevrons {
+      position: absolute;
+      left: 0;
+      bottom: 68px;
+      width: min(230px, 20vw);
+      opacity: 0.16;
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════
+       PROGRAM
+    ═══════════════════════════════════════════ */
+    .program .section-inner {
+      grid-template-columns: 0.7fr 1.3fr;
+    }
+
+    .schedule {
+      width: 100%;
+      max-width: 700px;
+      justify-self: end;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      align-items: stretch;
+      margin-bottom: 10px;
+    }
+
+    .day-date {
+      display: grid;
+      place-items: center;
+      min-height: 42px;
+      color: var(--white);
+      background: var(--green-dark);
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 4px 6px;
+      text-align: center;
+    }
+
+    .classes {
+      display: grid;
+      gap: 3px;
+    }
+
+    .class-row {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      min-height: 42px;
+      background: rgba(89,97,87,0.07);
+    }
+
+    .class-row span:first-child {
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: var(--green);
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 4px;
+      text-align: center;
+    }
+
+    .class-row span:last-child {
+      display: flex;
+      align-items: center;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--green-dark);
+      line-height: 1.45;
+    }
+
+    .note {
+      margin: 36px 0 0;
+      max-width: 640px;
+      color: var(--green-soft);
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════════
+       PARTNERS
+    ═══════════════════════════════════════════ */
+    .partners .section-inner {
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: center;
+    }
+
+    .partners-grid {
+      width: 100%;
+      max-width: 560px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 44px 56px;
+      filter: grayscale(1);
+      opacity: 0.84;
+    }
+
+    .partners-grid img {
+      max-height: 64px;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: contain;
+      transition: opacity 240ms ease;
+    }
+
+    .partners-grid img:hover {
+      opacity: 0.7;
+    }
+
+    .partner-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      max-height: 64px;
+      color: #2e3330;
+      font-size: clamp(32px, 3.6vw, 44px);
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: -0.07em;
+      line-height: 1;
+    }
+
+    /* ═══════════════════════════════════════════
+       TESTIMONIALS
+    ═══════════════════════════════════════════ */
+    .section.testimonials {
+      background:
+        radial-gradient(circle at 42% 64%, rgba(248,248,246,0.24) 0 10%, rgba(248,248,246,0.74) 25%, rgba(248,248,246,0.96) 58%, var(--paper) 100%),
+        linear-gradient(90deg,
+          rgba(37,50,42,0.72)       0%,
+          rgba(89,97,87,0.48)      22%,
+          rgba(248,248,246,0.82)   48%,
+          var(--paper)             100%),
+        url("Pattern/background_inspirarq_2026.png") left center / auto 100% no-repeat;
+    }
+
+    /* simbolos_03 — wireframe de cubos no canto superior esquerdo */
+    .section.testimonials::before {
+      content: "";
+      position: absolute;
+      top: 2.5%;
+      left: 47.5%;
+      width: min(310px, 27vw);
+      aspect-ratio: 0.72;
+      background: url("Pattern/simbolos_03_inspirarq_2026.png") top center / contain no-repeat;
+      opacity: 0.28;
+      pointer-events: none;
+      z-index: 1;
+      transform: translateX(-50%);
+    }
+
+    .section.testimonials::after {
+      display: none;
+    }
+
+    .section.testimonials .section-inner {
+      grid-template-columns: minmax(430px, 0.95fr) minmax(430px, 1.05fr);
+      align-items: center;
+      gap: clamp(56px, 7vw, 104px);
+      padding-top: calc(var(--header-h) + 32px);
+      padding-bottom: 118px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .quote-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      align-items: center;
+      gap: 42px;
+      max-width: 530px;
+      justify-self: end;
+      margin-top: 12px;
+    }
+
+    .quote-card::after {
+      content: "+  +\A+ + +\A+   +";
+      position: absolute;
+      left: 10px;
+      top: calc(100% - 34px);
+      color: rgba(89,97,87,0.58);
+      font-size: 34px;
+      font-weight: 300;
+      letter-spacing: 16px;
+      line-height: 0.78;
+      white-space: pre;
+      pointer-events: none;
+    }
+
+    .quote-mark {
+      position: absolute;
+      left: -20px;
+      top: -46px;
+      width: 122px;
+      height: 70px;
+      font-size: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .quote-mark::before,
+    .quote-mark::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 34px;
+      height: 58px;
+      background: rgba(255,255,255,0.94);
+      transform: skewX(-22deg);
+    }
+
+    .quote-mark::before { left: 4px; }
+    .quote-mark::after  { left: 52px; }
+
+    .portrait-frame {
+      position: relative;
+      z-index: 1;
+      width: 210px;
+      aspect-ratio: 0.72;
+      padding: 0;
+      border-radius: 999px;
+      background: transparent;
+      box-shadow: 0 18px 42px rgba(24,32,27,0.12);
+      overflow: hidden;
+    }
+
+    .portrait {
+      width: 100%;
+      height: 100%;
+      border-radius: 999px;
+      object-fit: cover;
+      object-position: center top;
+      transition: opacity 380ms ease;
+    }
+
+    .portrait.is-fading { opacity: 0; }
+
+    .testimonial-text {
+      position: relative;
+      z-index: 1;
+      color: var(--green-dark);
+      font-size: 12.5px;
+      font-weight: 500;
+      line-height: 1.76;
+      max-width: 210px;
+      transition:
+        opacity   380ms ease,
+        transform 380ms var(--ease);
+    }
+
+    .testimonial-text.is-fading {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+
+    .testimonial-text p { margin: 0; }
+
+    .testimonial-name {
+      margin-top: 18px;
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--green-dark);
+      line-height: 1.1;
+    }
+
+    .testimonial-role {
+      color: var(--muted);
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-top: 3px;
+    }
+
+    .photo-frame {
+      justify-self: start;
+      width: min(520px, 100%);
+      margin-top: -12px;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      aspect-ratio: 1.45;
+      object-fit: cover;
+      object-position: center center;
+      box-shadow: 0 20px 48px rgba(24,32,27,0.13);
+      transition: opacity 380ms ease;
+    }
+
+    .photo-frame img.is-fading { opacity: 0; }
+
+    .photo-caption {
+      max-width: 420px;
+      margin: 34px 0 0 118px;
+      color: var(--green);
+      font-size: 12.5px;
+      font-weight: 600;
+      text-align: left;
+      line-height: 1.62;
+      transition: opacity 380ms ease;
+    }
+
+    .photo-caption.is-fading { opacity: 0; }
+
+    .slider-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 58px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .slider-dots button {
+      width: 116px;
+      height: 3px;
+      padding: 0;
+      border: 0;
+      background: rgba(89,97,87,0.22);
+      cursor: pointer;
+      transition:
+        background 280ms ease,
+        transform   280ms var(--ease);
+    }
+
+    .slider-dots button.is-active {
+      background: var(--green);
+      transform: scaleX(1.05);
+    }
+
+    /* ═══════════════════════════════════════════
+       CTA
+    ═══════════════════════════════════════════ */
+    .cta .section-inner {
+      justify-items: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    .cta-symbol {
+      position: absolute;
+      right: -3%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(300px, 24vw);
+      opacity: 0.06;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+
+    .cta-content { max-width: 520px; }
+
+    .cta-heading {
+      margin: 0 0 12px;
+      color: var(--green-dark);
+      font-size: clamp(22px, 3vw, 36px);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .cta p {
+      margin: 0 0 34px;
+      color: var(--green-soft);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════════════════
+       BUTTON
+    ═══════════════════════════════════════════ */
+    .button {
+      display: inline-flex;
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 36px;
+      color: var(--white);
+      background: var(--green);
+      border: 1.5px solid var(--green);
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition:
+        transform    220ms var(--ease),
+        background   220ms ease,
+        border-color 220ms ease,
+        box-shadow   220ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: var(--green-dark);
+      border-color: var(--green-dark);
+      box-shadow: 0 12px 28px rgba(65,73,64,0.26);
+    }
+
+    .button:active { transform: translateY(-1px); }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    .site-footer {
+      background: #101211;
+      color: rgba(255,255,255,0.58);
+    }
+
+    .footer-inner {
+      width: min(var(--max), calc(100% - 80px));
+      margin: 0 auto;
+      padding: 80px 0 0;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr 1fr;
+      gap: 80px;
+    }
+
+    .footer-title {
+      margin: 0 0 20px;
+    }
+    .footer-logo {
+      height: 20px;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+      opacity: 0.88;
+    }
+
+    .footer-heading {
+      margin: 0 0 22px;
+      color: rgba(255,255,255,0.82);
+      font-size: 9.5px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .footer-inner p,
+    .footer-inner li {
+      margin: 0 0 10px;
+      font-size: 12.5px;
+      font-weight: 400;
+      line-height: 1.65;
+    }
+
+    .footer-inner ul { margin: 0; padding: 0; list-style: none; }
+
+    .footer-inner ul a {
+      opacity: 0.58;
+      transition: opacity 180ms ease;
+    }
+
+    .footer-inner ul a:hover { opacity: 1; }
+
+    .footer-bottom {
+      width: min(var(--max), calc(100% - 80px));
+      margin: 0 auto;
+      padding: 22px 0 30px;
+      margin-top: 52px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      font-size: 11px;
+      color: rgba(255,255,255,0.26);
+      font-weight: 400;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .socials a {
+      display: grid;
+      width: 32px; height: 32px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      opacity: 0.62;
+      transition: opacity 200ms ease, border-color 200ms ease;
+    }
+
+    .socials svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    .socials a:hover { opacity: 1; border-color: rgba(255,255,255,0.45); }
+
+    /* ═══════════════════════════════════════════
+       BACK TO TOP
+    ═══════════════════════════════════════════ */
+    .to-top {
+      position: fixed;
+      right: 28px; bottom: 28px;
+      z-index: 18;
+      display: grid;
+      width: 40px; height: 40px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 999px;
+      color: var(--white);
+      background: rgba(16,18,17,0.78);
+      opacity: 0;
+      pointer-events: none;
+      font-size: 14px;
+      transition: opacity 240ms ease, transform 240ms var(--ease);
+    }
+
+    .to-top.is-visible { opacity: 1; pointer-events: auto; }
+    .to-top:hover      { transform: translateY(-3px); }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE — 980px
+    ═══════════════════════════════════════════ */
+    @media (max-width: 980px) {
+      :root { --header-h: 72px; }
+
+      .header-inner,
+      .footer-inner {
+        width: min(calc(100% - 40px), var(--max));
+      }
+
+      .section-inner {
+        width: min(calc(100% - 40px), var(--max));
+        padding: calc(var(--header-h) + 40px) 0 56px;
+        gap: 52px;
+      }
+
+      .menu-button { display: flex; }
+
+      .nav {
+        position: fixed;
+        top: 0; right: 0; bottom: 0;
+        z-index: 99;
+        width: min(290px, 82vw);
+        padding: calc(var(--header-h) + 28px) 28px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        color: var(--white);
+        background: #101211;
+        transform: translateX(100%);
+        transition: transform 360ms var(--ease);
+        overflow-y: auto;
+      }
+
+      .nav.is-open { transform: translateX(0); }
+
+      .nav a {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        opacity: 0.8;
+      }
+      .nav a::after { display: none; }
+
+      /* restack all two-column grids — especificidade equivalente ao desktop (.section.X .section-inner) */
+      .section.about .section-inner,
+      .section.event .section-inner,
+      .section.program .section-inner,
+      .section.testimonials .section-inner,
+      .section.partners .section-inner,
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 44px;
+      }
+
+      .section.testimonials .section-inner { padding-bottom: 90px; }
+
+      .section.testimonials::before {
+        top: 7%;
+        left: 74%;
+        width: min(260px, 42vw);
+      }
+
+      .quote-card {
+        grid-template-columns: 180px minmax(0, 1fr);
+        justify-self: start;
+        max-width: 560px;
+      }
+
+      .quote-card::after {
+        left: 8px;
+        top: calc(100% - 24px);
+        font-size: 28px;
+      }
+
+      .portrait-frame {
+        width: 180px;
+      }
+
+      .copy,
+      .event-copy,
+      .schedule,
+      .photo-frame {
+        justify-self: stretch;
+        max-width: none;
+      }
+
+      .copy        { text-align: left; }
+      .big-idea    { justify-self: start; }
+      .photo-caption { text-align: left; margin: 24px 0 0; }
+
+      .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 44px;
+        max-width: 400px;
+      }
+
+      .slider-dots {
+        position: static;
+        margin: 32px auto 0;
+        transform: none;
+        justify-content: center;
+        gap: 24px;
+      }
+
+      .slider-dots button {
+        width: 86px;
+      }
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE — 640px
+    ═══════════════════════════════════════════ */
+    @media (min-width: 861px) and (max-width: 980px) {
+      .testimonials .section-inner {
+        grid-template-columns: minmax(390px, 0.95fr) minmax(390px, 1.05fr);
+        gap: 36px;
+        padding-bottom: 112px;
+      }
+
+      .section.testimonials::before {
+        top: 2%;
+        left: 52%;
+        width: 240px;
+      }
+
+      .quote-card {
+        grid-template-columns: 170px 1fr;
+        gap: 28px;
+        max-width: 420px;
+        justify-self: end;
+      }
+
+      .quote-card::after {
+        left: 6px;
+        top: calc(100% - 24px);
+        font-size: 26px;
+        letter-spacing: 12px;
+      }
+
+      .quote-mark {
+        transform: scale(0.82);
+        transform-origin: left top;
+      }
+
+      .portrait-frame {
+        width: 170px;
+      }
+
+      .testimonial-text {
+        max-width: 178px;
+        font-size: 11.5px;
+        line-height: 1.68;
+      }
+
+      .photo-frame {
+        justify-self: start;
+        width: min(420px, 100%);
+        margin-top: -6px;
+      }
+
+      .photo-caption {
+        max-width: 330px;
+        margin: 26px 0 0 76px;
+        font-size: 11.5px;
+      }
+
+      .slider-dots {
+        position: absolute;
+        left: 50%;
+        bottom: 52px;
+        transform: translateX(-50%);
+        gap: 36px;
+      }
+
+      .slider-dots button {
+        width: 92px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      html,
+      body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      .header-inner,
+      .section-inner,
+      .footer-inner,
+      .footer-bottom {
+        width: min(calc(100% - 52px), 560px);
+      }
+
+      .brand-logo { height: 18px; }
+
+      .section {
+        min-height: auto;
+        overflow: hidden;
+      }
+
+      .section-inner {
+        min-height: auto;
+        padding: calc(var(--header-h) + 44px) 0 52px;
+        align-content: start;
+        gap: 28px;
+      }
+
+      .hero {
+        min-height: 100svh;
+      }
+
+      .hero .section-inner {
+        min-height: 100svh;
+        align-content: center;
+        padding-top: var(--header-h);
+        padding-bottom: 64px;
+        gap: 0;
+      }
+
+      .hero-logo { width: min(240px, 60vw); }
+
+      .hero-kicker {
+        margin-top: 18px;
+        font-size: 9px;
+        letter-spacing: 0.2em;
+      }
+
+      .hero-mark {
+        top: 36%;
+        right: 6%;
+        width: min(100px, 22vw);
+        opacity: 0.22;
+      }
+
+      .hero-scroll { bottom: 28px; }
+
+      .section.about .section-inner,
+      .section.event .section-inner,
+      .section.program .section-inner,
+      .section.partners .section-inner,
+      .section.testimonials .section-inner,
+      .footer-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .section-title,
+      .big-idea {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        gap: 18px;
+        font-size: clamp(23px, 7vw, 34px);
+        line-height: 1.08;
+        overflow-wrap: anywhere;
+      }
+
+      .section-title::before,
+      .big-idea::before {
+        width: 2px;
+        height: 82px;
+      }
+
+      .section-title strong,
+      .big-idea strong {
+        display: inline-block;
+        margin-left: 0.18em;
+      }
+
+      .section.about::before {
+        background-position: left top;
+        background-size: auto 78%;
+        opacity: 0.16;
+        transform: none;
+      }
+
+      .section.about::after {
+        background:
+          linear-gradient(90deg,
+            rgba(248,248,246,0.7) 0%,
+            rgba(248,248,246,0.94) 38%,
+            var(--paper) 100%),
+          radial-gradient(ellipse 80% 42% at 12% 42%,
+            rgba(79,103,80,0.12) 0%,
+            transparent 72%);
+      }
+
+      .copy,
+      .event-copy,
+      .schedule,
+      .photo-frame,
+      .cta-content {
+        width: 100%;
+        max-width: 100%;
+        justify-self: stretch;
+      }
+
+      .copy,
+      .event-copy {
+        font-size: 15px;
+        line-height: 1.76;
+        text-align: left;
+      }
+
+      .event-symbol {
+        width: 150px;
+        right: -34px;
+        bottom: 24px;
+        opacity: 0.12;
+      }
+
+      .big-idea {
+        justify-self: start;
+      }
+
+      .meta-pill {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .day,
+      .class-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .day {
+        margin-bottom: 14px;
+      }
+
+      .day-date {
+        min-height: 34px;
+        justify-content: flex-start;
+        padding: 0 12px;
+      }
+
+      .class-row {
+        border-left: 3px solid var(--green);
+        background: rgba(89,97,87,0.06);
+      }
+
+      .class-row span:first-child {
+        min-height: 28px;
+        justify-content: flex-start;
+        padding: 7px 12px 0;
+        background: transparent;
+        color: var(--green);
+      }
+
+      .class-row span:last-child {
+        padding: 4px 12px 12px;
+      }
+
+      .note {
+        margin-top: 26px;
+        font-size: 12.5px;
+        line-height: 1.58;
+      }
+
+      .partners-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 380px;
+        gap: 30px 34px;
+        justify-self: start;
+      }
+
+      .partners-grid img {
+        max-height: 54px;
+      }
+
+      .partner-text {
+        font-size: 32px;
+      }
+
+      .section.testimonials::before {
+        top: 6%;
+        left: 82%;
+        width: 190px;
+        opacity: 0.16;
+      }
+
+      .section.testimonials .section-inner {
+        padding-bottom: 58px;
+      }
+
+      .quote-card {
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 26px;
+        max-width: 100%;
+        justify-self: stretch;
+        margin-top: 0;
+      }
+
+      .quote-card::after {
+        display: none;
+      }
+
+      .quote-mark {
+        left: -10px;
+        top: -34px;
+        transform: scale(0.74);
+        transform-origin: left top;
+      }
+
+      .portrait-frame {
+        width: 160px;
+      }
+
+      .testimonial-text {
+        max-width: none;
+        font-size: 12.5px;
+        line-height: 1.68;
+      }
+
+      .photo-frame {
+        margin-top: 4px;
+      }
+
+      .photo-frame img {
+        aspect-ratio: 1.2;
+      }
+
+      .photo-caption {
+        max-width: 100%;
+        margin: 18px 0 0;
+        font-size: 12.5px;
+        text-align: left;
+      }
+
+      .slider-dots {
+        position: static;
+        margin: 26px auto 0;
+        transform: none;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .slider-dots button {
+        width: 64px;
+      }
+
+      .cta .section-inner {
+        min-height: auto;
+        padding-top: 86px;
+        padding-bottom: 86px;
+      }
+
+      .cta-heading {
+        font-size: clamp(28px, 9vw, 40px);
+      }
+
+      .cta p {
+        font-size: 15px;
+      }
+
+      .button {
+        width: min(100%, 320px);
+      }
+
+      .footer-inner {
+        padding: 52px 0 36px;
+        gap: 34px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      :root { --header-h: 64px; }
+
+      .brand { font-size: 18px; }
+
+      .hero-logo   { width: min(200px, 54vw); }
+      .hero-mark   { display: none; }
+      .hero-symbol { display: none; }
+      .hero-scroll { bottom: 16px; }
+
+      .section-inner { padding: calc(var(--header-h) + 32px) 0 48px; gap: 40px; }
+
+      .section-title,
+      .big-idea { gap: 20px; }
+
+      .section-title::before,
+      .big-idea::before { height: 78px; }
+
+      .day            { grid-template-columns: 1fr; }
+      .day-date       { min-height: 34px; }
+      .class-row      {
+        grid-template-columns: 1fr;
+        border-left: 3px solid var(--green);
+        background: rgba(89,97,87,0.06);
+      }
+      .class-row span:first-child {
+        min-height: 28px;
+        background: transparent;
+        color: var(--green);
+        justify-content: flex-start;
+        padding-left: 12px;
+      }
+      .class-row span:last-child { padding: 6px 12px 10px; }
+
+      .partners-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 32px; }
+      .partner-text  { font-size: 34px; }
+
+      .quote-card    { grid-template-columns: 1fr; gap: 26px; }
+      .quote-card::after { display: none; }
+      .portrait-frame { width: 154px; }
+      .testimonial-text { max-width: none; }
+      .quote-mark    { left: -8px; top: -34px; transform: scale(0.76); transform-origin: left top; }
+      .section.testimonials::before { left: 86%; width: 170px; opacity: 0.18; }
+      .slider-dots { gap: 14px; }
+      .slider-dots button { width: 58px; }
+
+      .cta-symbol    { display: none; }
+      .footer-inner  { gap: 32px; }
+      .to-top        { right: 14px; bottom: 18px; }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner,
+      .section-inner,
+      .footer-inner,
+      .footer-bottom {
+        width: min(calc(100% - 44px), 430px);
+      }
+
+      .section-inner {
+        padding: calc(var(--header-h) + 26px) 0 44px;
+        gap: 26px;
+      }
+
+      .section.about .section-inner {
+        padding-bottom: 28px;
+      }
+
+      .section.event .section-inner {
+        padding-top: 42px;
+        gap: 24px;
+      }
+
+      .section.program .section-inner,
+      .section.partners .section-inner {
+        padding-top: 44px;
+      }
+
+      .section-title,
+      .big-idea {
+        position: relative;
+        display: block;
+        padding-left: 36px;
+        font-size: clamp(27px, 8.4vw, 34px);
+        line-height: 1.04;
+        letter-spacing: -0.01em;
+        word-break: normal;
+        overflow-wrap: normal;
+      }
+
+      .section-title::before,
+      .big-idea::before {
+        position: absolute;
+        left: 7px;
+        top: 0.02em;
+        height: 74px;
+      }
+
+      .section-title strong,
+      .big-idea strong {
+        display: block;
+        margin: 2px 0 0;
+        white-space: normal;
+      }
+
+      .event-copy {
+        order: 2;
+      }
+
+      .big-idea {
+        order: 1;
+      }
+
+      .copy,
+      .event-copy {
+        font-size: 14.5px;
+        line-height: 1.7;
+      }
+
+      .copy p {
+        margin-bottom: 18px;
+      }
+
+      .meta-pill {
+        max-width: none;
+        margin-top: 10px;
+      }
+
+      .partners-grid {
+        width: 100%;
+        max-width: 315px;
+        margin: 6px auto 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        justify-items: center;
+        gap: 26px 28px;
+      }
+
+      .partners-grid img {
+        width: auto;
+        max-width: 132px;
+        max-height: 58px;
+        object-fit: contain;
+      }
+
+      .partners-grid img:last-child {
+        grid-column: 1 / -1;
+        max-width: 142px;
+      }
+
+      .partner-text {
+        justify-content: center;
+        font-size: 34px;
+      }
+
+      .schedule {
+        margin-top: 10px;
+      }
+
+      .day {
+        margin-bottom: 12px;
+      }
+
+      .day-date {
+        font-size: 12px;
+      }
+
+      .class-row span:last-child {
+        font-size: 12.5px;
+        line-height: 1.45;
+      }
+
+      .section.testimonials {
+        background:
+          radial-gradient(ellipse 92% 54% at 12% 28%, rgba(79,103,80,0.12) 0%, transparent 68%),
+          linear-gradient(90deg, rgba(248,248,246,0.98), var(--paper));
+      }
+
+      .section.testimonials::before {
+        top: 40px;
+        left: auto;
+        right: -42px;
+        width: 178px;
+        opacity: 0.13;
+        transform: none;
+      }
+
+      .section.testimonials .section-inner {
+        padding-top: 54px;
+        padding-bottom: 58px;
+        gap: 0;
+      }
+
+      .quote-card {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-top: 16px;
+      }
+
+      .quote-mark {
+        left: calc(50% - 112px);
+        top: 2px;
+        transform: scale(0.82);
+        opacity: 0.92;
+      }
+
+      .portrait-frame {
+        width: min(180px, 52vw);
+        margin: 0 auto 28px;
+      }
+
+      .testimonial-text {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.65;
+      }
+
+      .testimonial-text p {
+        max-width: 34em;
+      }
+
+      .testimonial-name {
+        margin-top: 18px;
+        font-size: 16px;
+      }
+
+      .testimonial-role {
+        font-size: 11px;
+        line-height: 1.35;
+      }
+
+      .photo-frame {
+        width: calc(100% + 8px);
+        margin: 44px -4px 0;
+      }
+
+      .photo-frame img {
+        aspect-ratio: 1.08;
+        object-position: center center;
+        box-shadow: 0 18px 34px rgba(24,32,27,0.11);
+      }
+
+      .photo-caption {
+        margin-top: 18px;
+        font-size: 12.5px;
+        line-height: 1.56;
+      }
+
+      .slider-dots {
+        margin-top: 28px;
+        gap: 12px;
+      }
+
+      .slider-dots button {
+        width: 54px;
+        height: 3px;
+      }
+
+      .to-top {
+        right: 14px;
+        bottom: 76px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  </style>
+
+  <!-- SEO: Dados Estruturados (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationEvent",
+        "@id": "https://inspiraarq.vsexperience.com.br/#event",
+        "name": "InspirARQ 2026",
+        "description": "Curso imersivo de arquitetura e design de interiores com 10 aulas cobrindo planejados, iluminação, revestimentos, pedras e automação residencial.",
+        "url": "https://inspiraarq.vsexperience.com.br/",
+        "image": "https://inspiraarq.vsexperience.com.br/lading-page_INSPIRARQ.png",
+        "startDate": "2026-07-13T19:00:00-03:00",
+        "endDate": "2026-07-17T22:00:00-03:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "pt-BR",
+        "location": {
+          "@type": "Place",
+          "name": "Costa Flores Flagship Store",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Cidade Jardim, 4500",
+            "addressLocality": "São José dos Campos",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "@id": "https://costaflores.com.br/#organization",
+          "name": "Costa Flores",
+          "url": "https://costaflores.com.br",
+          "sameAs": [
+            "https://www.instagram.com/costaflores/",
+            "https://www.facebook.com/mcostaflores/",
+            "https://www.linkedin.com/company/24878231/"
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://form.respondi.app/qfIDK91N",
+          "availability": "https://schema.org/LimitedAvailability",
+          "validThrough": "2026-07-12"
+        },
+        "subEvent": [
+          { "@type": "Event", "name": "Briefing com Fernando Flores", "startDate": "2026-07-13T19:00:00-03:00" },
+          { "@type": "Event", "name": "Importância dos Planejados com Fernando Flores", "startDate": "2026-07-13T20:00:00-03:00" },
+          { "@type": "Event", "name": "Ergonomia com Blum", "startDate": "2026-07-14T19:00:00-03:00" },
+          { "@type": "Event", "name": "Planejados com Fernando Flores", "startDate": "2026-07-14T20:00:00-03:00" },
+          { "@type": "Event", "name": "Iluminação com ArqLuce", "startDate": "2026-07-15T19:00:00-03:00" },
+          { "@type": "Event", "name": "Bancadas de Pedras com Portale Mármores", "startDate": "2026-07-15T20:00:00-03:00" },
+          { "@type": "Event", "name": "Revestimentos com Portobello Shop", "startDate": "2026-07-16T19:00:00-03:00" },
+          { "@type": "Event", "name": "Automação Residencial com SDA Automação", "startDate": "2026-07-16T20:00:00-03:00" },
+          { "@type": "Event", "name": "Como Buscar Referências com Fernando Flores", "startDate": "2026-07-17T19:00:00-03:00" },
+          { "@type": "Event", "name": "Talk e Encerramento com Fernando Flores", "startDate": "2026-07-17T20:00:00-03:00" }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://costaflores.com.br/#organization",
+        "name": "Costa Flores",
+        "url": "https://costaflores.com.br",
+        "description": "Costa Flores transforma projetos em experiências únicas com mobiliário sob medida de alto padrão, planejamento dedicado e cuidado artesanal.",
+        "telephone": "+55-12-99191-3615",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Cidade Jardim, 4500 — Jardim Esplanada",
+            "addressLocality": "São José dos Campos",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Jornalista Roberto Marinho, 85 — Cidade Monções",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/costaflores/",
+          "https://www.facebook.com/mcostaflores/",
+          "https://www.linkedin.com/company/24878231/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://inspiraarq.vsexperience.com.br/#webpage",
+        "url": "https://inspiraarq.vsexperience.com.br/",
+        "name": "InspirARQ 2026 — Curso Imersivo de Arquitetura e Design | Costa Flores",
+        "description": "Curso imersivo de arquitetura e design de interiores: 10 aulas com especialistas. 13 a 17 de julho de 2026, São José dos Campos, SP.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://costaflores.com.br/#organization" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- OVERLAY (mobile nav backdrop) -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Costa Flores — Página inicial">
+        <img class="brand-logo"
+             src="01_Logo InspirARQ/logocostaflores.svg"
+             alt="Costa Flores">
+      </a>
+      <button class="menu-button" type="button"
+              id="menuButton"
+              aria-label="Abrir menu"
+              aria-expanded="false"
+              aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#data">Data &amp; Local</a>
+        <a href="#programacao">Programação</a>
+        <a href="#parceiros">Parceiros</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#inscricao">Inscreva-se</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="section hero" id="home">
+      <img class="hero-mark"
+           src="Pattern/simbolos_03_inspirarq_2026.png"
+           alt="" aria-hidden="true">
+      <img class="hero-symbol"
+           src="Pattern/simbolos_01_inspirarq_2026.png"
+           alt="" aria-hidden="true">
+
+      <div class="section-inner">
+        <div class="reveal">
+          <h1 style="display:contents">
+            <img class="hero-logo"
+                 src="01_Logo InspirARQ/logo-inspirarq_02_verde.png"
+                 alt="InspirARQ 2026 — Curso Imersivo de Arquitetura e Design de Interiores"
+                 fetchpriority="high"
+                 loading="eager">
+          </h1>
+          <p class="hero-kicker">Inspire conhecimento</p>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">scroll</div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SOBRE
+    ═══════════════════════════════════════════ -->
+    <section class="section about" id="sobre">
+      <div class="section-inner">
+        <h2 class="section-title reveal">
+          Sobre a <strong>INSPIRARQ</strong>
+        </h2>
+        <div class="copy reveal delay-1">
+          <p>O InspirARQ é um curso imersivo voltado para estudantes de arquitetura e design de interiores, com foco em planejados e conteúdos complementares como iluminação, revestimentos, pedras e soluções para o dia a dia de projeto.</p>
+          <p>Foram 5 edições com uma trajetória consistente: já impactamos <strong>mais de 140 profissionais</strong> entre estudantes e arquitetos atuantes, promovendo troca real de conhecimento e conexão com o mercado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DATA & LOCAL
+    ═══════════════════════════════════════════ -->
+    <section class="section event" id="data">
+      <img class="chevrons"
+           src="Pattern/simbolos_02_inspirarq_2026.png"
+           alt="" aria-hidden="true"
+           loading="lazy" decoding="async">
+      <div class="section-inner">
+        <div class="event-copy reveal">
+          <p>O InspirARQ acontece de <strong><time datetime="2026-07-13/2026-07-17">13 a 17 de Julho de 2026</time></strong>, na Costa Flores Flagship Store, em São José dos Campos, SP.</p>
+          <p>Vagas Limitadas.</p>
+          <div class="meta-pill">
+            <span>Horário: 19h00 às 22h00</span>
+            <span>Certificado incluso</span>
+          </div>
+        </div>
+        <div class="big-idea reveal delay-2">
+          <span>Inspire <strong>NOVAS IDEIAS</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROGRAMAÇÃO
+    ═══════════════════════════════════════════ -->
+    <section class="section program" id="programacao">
+      <div class="section-inner">
+        <h2 class="section-title reveal">
+          Temas <strong>ABORDADOS</strong>
+        </h2>
+        <div class="schedule reveal delay-1">
+
+          <div class="day">
+            <div class="day-date"><time datetime="2026-07-13">13 Jul</time></div>
+            <div class="classes">
+              <div class="class-row">
+                <span>Aula 1</span>
+                <span>Briefing com Fernando Flores</span>
+              </div>
+              <div class="class-row">
+                <span>Aula 2</span>
+                <span>Importância dos Planejados com Fernando Flores</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="day-date"><time datetime="2026-07-14">14 Jul</time></div>
+            <div class="classes">
+              <div class="class-row">
+                <span>Aula 3</span>
+                <span>Ergonomia com Blum</span>
+              </div>
+              <div class="class-row">
+                <span>Aula 4</span>
+                <span>Planejados com Fernando Flores</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="day-date"><time datetime="2026-07-15">15 Jul</time></div>
+            <div class="classes">
+              <div class="class-row">
+                <span>Aula 5</span>
+                <span>Iluminação com ArqLuce</span>
+              </div>
+              <div class="class-row">
+                <span>Aula 6</span>
+                <span>Bancadas de Pedras com Portale Mármores</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="day-date"><time datetime="2026-07-16">16 Jul</time></div>
+            <div class="classes">
+              <div class="class-row">
+                <span>Aula 7</span>
+                <span>Revestimentos com Portobello Shop</span>
+              </div>
+              <div class="class-row">
+                <span>Aula 8</span>
+                <span>Automação Residencial com SDA Automação</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="day-date"><time datetime="2026-07-17">17 Jul</time></div>
+            <div class="classes">
+              <div class="class-row">
+                <span>Aula 9</span>
+                <span>Como Buscar Referências com Fernando Flores</span>
+              </div>
+              <div class="class-row">
+                <span>Aula 10</span>
+                <span>Talk e Encerramento com Fernando Flores</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="note">* Semifinais da Copa do Mundo. Caso o Brasil avance para essa fase, não haverá InspirARQ em um desses dias e o cronograma poderá sofrer ajustes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PARCEIROS
+    ═══════════════════════════════════════════ -->
+    <section class="section partners" id="parceiros">
+      <div class="section-inner">
+        <h2 class="section-title reveal">
+          Parceiros <strong>DESTA EDIÇÃO</strong>
+        </h2>
+        <div class="partners-grid reveal delay-1" aria-label="Logos dos parceiros">
+          <img src="05_Logo Parceiros/logo_arqluce iluminacao.png" alt="ArqLuce Iluminação" loading="lazy" decoding="async">
+          <div class="partner-text" aria-label="Blum">blum</div>
+          <img src="05_Logo Parceiros/logo_portale marmores.png" alt="Portale Mármores" loading="lazy" decoding="async">
+          <img src="05_Logo Parceiros/logo_sda automacao.png" alt="SDA Automação" loading="lazy" decoding="async">
+          <img src="05_Logo Parceiros/logo_portobello shop sjc.png" alt="Portobello Shop São José dos Campos" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DEPOIMENTOS
+    ═══════════════════════════════════════════ -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="section-inner">
+
+        <article class="quote-card reveal"
+                 aria-live="polite"
+                 aria-atomic="true">
+          <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="portrait-frame">
+            <img class="portrait"
+                 id="testimonialPortrait"
+                 src="06_Depoimentos/Rachel Wasser_InspirARQ_Retratos-93.jpg"
+                 alt="Rachel Wasser"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="testimonial-text" id="testimonialTextBlock">
+            <p id="testimonialQuote">Ao visitar a fábrica Costa Flores, por meio da faculdade, me encantei com a história e qualidade da empresa. Esperava que o curso seria muito bom e enriquecedor, mas superou minhas expectativas.</p>
+            <div class="testimonial-name" id="testimonialName">Rachel Wasser</div>
+            <div class="testimonial-role" id="testimonialRole">Estudante de Arquitetura e Urbanismo</div>
+          </div>
+        </article>
+
+        <div class="photo-frame reveal delay-1">
+          <img id="testimonialScene"
+               src="https://costaflores.com.br/wp-content/uploads/2026/02/sala_C.M_costaflores_07.jpg"
+               alt="Ambiente planejado Costa Flores"
+               loading="lazy" decoding="async">
+          <p class="photo-caption" id="testimonialCaption">Agregou bastante meu conhecimento em interiores, um segmento pouco aproveitado na faculdade de arquitetura.</p>
+        </div>
+
+      </div>
+      <div class="slider-dots"
+           id="sliderDots"
+           role="tablist"
+           aria-label="Navegar entre depoimentos"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA
+    ═══════════════════════════════════════════ -->
+    <section class="section cta" id="inscricao">
+      <img class="cta-symbol"
+           src="Pattern/simbolos_01_inspirarq_2026.png"
+           alt="" aria-hidden="true"
+           loading="lazy" decoding="async">
+      <div class="section-inner">
+        <div class="cta-content reveal">
+          <h2 class="cta-heading">Preparado para<br>inspirar conhecimento?</h2>
+          <p><time datetime="2026-07-13/2026-07-17">13 a 17 de julho de 2026</time> &middot; São José dos Campos, SP<br>Vagas limitadas — garanta a sua.</p>
+          <a class="button"
+             href="https://form.respondi.app/qfIDK91N"
+             target="_blank"
+             rel="noopener noreferrer">
+            Inscreva-se agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-title">
+          <img class="footer-logo"
+               src="01_Logo InspirARQ/logocostaflores.svg"
+               alt="Costa Flores"
+               loading="lazy" decoding="async">
+        </div>
+        <p>A Costa Flores transforma projetos em experiências únicas com mobiliário sob medida de alto padrão, soluções precisas, planejamento dedicado e cuidado artesanal para criar espaços que inspiram.</p>
+        <div class="socials" aria-label="Redes sociais">
+          <a href="https://www.facebook.com/mcostaflores/" target="_blank" rel="noopener" aria-label="Facebook Costa Flores">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.2 8.1V6.3c0-.8.5-1 1-1h2.6V1h-3.6c-4 0-4.9 3-4.9 4.9v2.2H6v4.4h3.3V23h4.5V12.5h3.7l.6-4.4h-4z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/costaflores/" target="_blank" rel="noopener" aria-label="Instagram Costa Flores">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8zm8.9 2.1a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zM12 7.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4zm0 2a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/24878231/" target="_blank" rel="noopener" aria-label="LinkedIn Costa Flores">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.35 8h4.3v15H.35V8zM8 8h4.12v2.05h.06c.57-1.08 1.98-2.23 4.07-2.23 4.35 0 5.15 2.86 5.15 6.58V23h-4.3v-7.63c0-1.82-.03-4.16-2.53-4.16-2.54 0-2.93 1.98-2.93 4.03V23H8V8z"/>
+            </svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5512991913615" target="_blank" rel="noopener" aria-label="WhatsApp Costa Flores">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.52 3.49A11.82 11.82 0 0 0 12.1 0C5.56 0 .24 5.31.24 11.85c0 2.09.55 4.13 1.6 5.93L.14 24l6.37-1.67a11.9 11.9 0 0 0 5.59 1.42h.01c6.54 0 11.86-5.31 11.86-11.85 0-3.17-1.23-6.14-3.45-8.41zM12.1 21.75h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.22-3.78.99 1.01-3.68-.24-.38a9.8 9.8 0 0 1-1.5-5.24C2.2 6.41 6.65 2 12.1 2c2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.9 7c0 5.43-4.44 9.85-9.89 9.85zm5.42-7.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47a8.96 8.96 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.01-1.03 2.46s1.06 2.85 1.21 3.05c.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-heading">Navegação</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">InspirARQ</a></li>
+          <li><a href="#programacao">Programação</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#inscricao">Inscreva-se</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">Endereços</h3>
+        <address>Costa Flores Flagship Store<br>Av. Cidade Jardim, 4500 — Jardim Esplanada,<br>São José dos Campos — SP.</address>
+        <address>Costa Flores Parque Global<br>Av. Jornalista Roberto Marinho, 85 — Cidade Monções,<br>São Paulo — SP.</address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Costa Flores. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <a class="to-top" id="toTop" href="#home" aria-label="Voltar ao topo">↑</a>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <script>
+    /* ── LENIS SMOOTH SCROLL ────────────────────────────────── */
+    var snapTargets = Array.from(document.querySelectorAll("main .section, .site-footer"));
+
+    /* ── SCROLL SNAP — DESKTOP ONLY ─────────────────────────── */
+    (function () {
+      var desktopMQ = window.matchMedia("(min-width: 981px)");
+      var reducedMQ = window.matchMedia("(prefers-reduced-motion: reduce)");
+      var isSnapping = false;
+      var snapTimer = null;
+      var touchStartY = 0;
+
+      function isEnabled() {
+        return desktopMQ.matches && !reducedMQ.matches;
+      }
+
+      /* seção mais próxima do centro da viewport */
+      function nearestIndex() {
+        var viewportAnchor = window.scrollY + window.innerHeight * 0.35;
+        return snapTargets.reduce(function (best, target, index) {
+          var distance = Math.abs(target.offsetTop - viewportAnchor);
+          return distance < best.distance ? { index: index, distance: distance } : best;
+        }, { index: 0, distance: Infinity }).index;
+      }
+
+      function snapToIndex(index) {
+        var next = Math.max(0, Math.min(snapTargets.length - 1, index));
+        var target = snapTargets[next];
+        if (!target) return;
+
+        isSnapping = true;
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: "smooth"
+        });
+
+        clearTimeout(snapTimer);
+        snapTimer = setTimeout(function () {
+          isSnapping = false;
+        }, 850);
+      }
+
+      /* mantém current sincronizado após nav links e scroll programático */
+      /* current section is calculated on demand by nearestIndex(). */
+
+      /* wheel → snap; última seção + ↓ libera scroll nativo para o footer */
+      window.addEventListener("wheel", function (e) {
+        if (!isEnabled()) return;
+        if (Math.abs(e.deltaY) < 18 || isSnapping) {
+          e.preventDefault();
+          return;
+        }
+        e.preventDefault();
+        snapToIndex(nearestIndex() + (e.deltaY > 0 ? 1 : -1));
+      }, { passive: false });
+
+      /* teclado → snap */
+      window.addEventListener("keydown", function (e) {
+        if (!isEnabled()) return;
+        if (e.key === "ArrowDown" || e.key === "PageDown") {
+          e.preventDefault();
+          snapToIndex(nearestIndex() + 1);
+        } else if (e.key === "ArrowUp" || e.key === "PageUp") {
+          e.preventDefault();
+          snapToIndex(nearestIndex() - 1);
+        } else if (e.key === "Home") {
+          e.preventDefault();
+          snapToIndex(0);
+        } else if (e.key === "End") {
+          e.preventDefault();
+          snapToIndex(snapTargets.length - 1);
+        }
+      });
+
+      window.addEventListener("touchstart", function (e) {
+        if (!isEnabled() || !e.touches.length) return;
+        touchStartY = e.touches[0].clientY;
+      }, { passive: true });
+
+      window.addEventListener("touchend", function (e) {
+        if (!isEnabled() || isSnapping || !touchStartY) return;
+        var endY = e.changedTouches[0].clientY;
+        var delta = touchStartY - endY;
+        touchStartY = 0;
+
+        if (Math.abs(delta) < 50) return;
+        snapToIndex(nearestIndex() + (delta > 0 ? 1 : -1));
+      }, { passive: true });
+    })();
+
+    /* ── HEADER SCROLL ─────────────────────────────────────── */
+    const header = document.getElementById("siteHeader");
+    const toTop  = document.getElementById("toTop");
+
+    function updateHeader() {
+      header.classList.toggle("is-scrolled", window.scrollY > 50);
+      toTop.classList.toggle("is-visible",  window.scrollY > 420);
+    }
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+
+    /* ── MOBILE MENU ───────────────────────────────────────── */
+    const menuBtn = document.getElementById("menuButton");
+    const mainNav = document.getElementById("mainNav");
+    const overlay = document.getElementById("navOverlay");
+
+    function openMenu() {
+      mainNav.classList.add("is-open");
+      overlay.classList.add("is-open");
+      menuBtn.classList.add("is-open");
+      menuBtn.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeMenu() {
+      mainNav.classList.remove("is-open");
+      overlay.classList.remove("is-open");
+      menuBtn.classList.remove("is-open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
+
+    menuBtn.addEventListener("click", () => {
+      mainNav.classList.contains("is-open") ? closeMenu() : openMenu();
+    });
+
+    overlay.addEventListener("click", closeMenu);
+
+    mainNav.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") closeMenu();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && mainNav.classList.contains("is-open")) closeMenu();
+    });
+
+    /* ── ENTRANCE ANIMATIONS ───────────────────────────────── */
+    (function () {
+      var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if ("IntersectionObserver" in window && !prefersReduced) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: "0px 0px -36px 0px" });
+
+        document.querySelectorAll(".reveal").forEach(function (el) {
+          io.observe(el);
+        });
+      } else {
+        document.querySelectorAll(".reveal").forEach(function (el) {
+          el.classList.add("is-visible");
+        });
+      }
+    })();
+
+    /* ── TESTIMONIALS CAROUSEL ─────────────────────────────── */
+    (function () {
+      var TRANSITION_MS = 380;
+      var INTERVAL_MS   = 6400;
+
+      var testimonials = [
+        {
+          name:    "Rachel Wasser",
+          role:    "Estudante de Arquitetura e Urbanismo",
+          portrait:"06_Depoimentos/Rachel Wasser_InspirARQ_Retratos-93.jpg",
+          scene:   "https://costaflores.com.br/wp-content/uploads/2026/02/sala_C.M_costaflores_07.jpg",
+          quote:   "Ao visitar a fábrica Costa Flores, por meio da faculdade, me encantei com a história e qualidade da empresa. Esperava que o curso seria muito bom e enriquecedor, mas superou minhas expectativas.",
+          caption: "Agregou bastante meu conhecimento em interiores, um segmento pouco aproveitado na faculdade de arquitetura."
+        },
+        {
+          name:    "Beatriz Luz",
+          role:    "Participante InspirARQ",
+          portrait:"06_Depoimentos/Beatriz Luz Pereira_InspirARQ_Retratos-34.jpg",
+          scene:   "https://costaflores.com.br/wp-content/uploads/2026/03/escritorio_Residencial-Athmosphere_costaflores_moveiscostaflores_01-scaled.jpg",
+          quote:   "Gostei muito do curso. As aulas sobre marcenaria, iluminação e pedras se destacaram bastante, com um conteúdo que excedeu as expectativas.",
+          caption: "Ver materiais e compará-los pessoalmente faz bastante falta na faculdade. Excelente curso, passou muito conteúdo."
+        },
+        {
+          name:    "Matheus Rosa",
+          role:    "Participante InspirARQ",
+          portrait:"06_Depoimentos/Matheus Rosa Alves_InspirARQ_Retratos-20.jpg",
+          scene:   "https://costaflores.com.br/wp-content/uploads/2026/03/cozinha_Residencial-Athmosphere_costaflores_moveiscostaflores_02-1.jpg",
+          quote:   "Saí com um conhecimento magnífico em briefing, que para mim foi o ponto máximo do curso.",
+          caption: "O InspirARQ trouxe repertório técnico e contato com vivências reais de projeto."
+        }
+      ];
+
+      var elPortrait  = document.getElementById("testimonialPortrait");
+      var elScene     = document.getElementById("testimonialScene");
+      var elQuote     = document.getElementById("testimonialQuote");
+      var elName      = document.getElementById("testimonialName");
+      var elRole      = document.getElementById("testimonialRole");
+      var elCaption   = document.getElementById("testimonialCaption");
+      var elTextBlock = document.getElementById("testimonialTextBlock");
+      var dotsEl      = document.getElementById("sliderDots");
+      var current     = 0;
+      var timer       = null;
+      var busy        = false;
+
+      function setActiveDot(index) {
+        dotsEl.querySelectorAll("button").forEach(function (btn, i) {
+          var active = i === index;
+          btn.classList.toggle("is-active", active);
+          btn.setAttribute("aria-selected", String(active));
+        });
+      }
+
+      function goTo(index) {
+        if (index === current || busy) return;
+        busy = true;
+
+        /* fade out */
+        elPortrait.classList.add("is-fading");
+        elScene.classList.add("is-fading");
+        elTextBlock.classList.add("is-fading");
+        elCaption.classList.add("is-fading");
+
+        setTimeout(function () {
+          var t = testimonials[index];
+          current = index;
+
+          elPortrait.src         = t.portrait;
+          elPortrait.alt         = t.name;
+          elScene.src            = t.scene;
+          elScene.alt            = "Ambiente planejado Costa Flores";
+          elQuote.textContent    = t.quote;
+          elName.textContent     = t.name;
+          elRole.textContent     = t.role;
+          elCaption.textContent  = t.caption;
+          setActiveDot(index);
+
+          /* fade in */
+          elPortrait.classList.remove("is-fading");
+          elScene.classList.remove("is-fading");
+          elTextBlock.classList.remove("is-fading");
+          elCaption.classList.remove("is-fading");
+
+          busy = false;
+        }, TRANSITION_MS);
+      }
+
+      function startAutoPlay() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+          goTo((current + 1) % testimonials.length);
+        }, INTERVAL_MS);
+      }
+
+      /* build dots */
+      testimonials.forEach(function (t, i) {
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.setAttribute("role", "tab");
+        btn.setAttribute("aria-label", "Depoimento de " + t.name);
+        btn.setAttribute("aria-selected", String(i === 0));
+        if (i === 0) btn.classList.add("is-active");
+        btn.addEventListener("click", function () {
+          goTo(i);
+          startAutoPlay();
+        });
+        dotsEl.appendChild(btn);
+      });
+
+      startAutoPlay();
+    })();
+  </script>
+</body>
+</html>
